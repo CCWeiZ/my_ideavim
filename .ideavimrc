@@ -1,0 +1,36 @@
+let mapleader=" "
+filetype on
+filetype plugin on
+
+nnoremap LB ^
+nnoremap LE $
+set sourround
+
+nmap <Leader>w/ :vsp<CR>
+nmap <Leader>w- :sp<CR>
+nnoremap <Leader>wl <C-W>l
+nnoremap <Leader>wh <C-W>h
+nnoremap <Leader>wj <C-W>j
+nnoremap <Leader>wk <C-W>k
+autocmd BufWritePost $MYVIMRC source $MYVIMRC
+
+nmap <Leader>q :q<CR>
+inoremap jj <Esc>
+inoremap <C-h> <backspace>
+
+nnoremap U <C-r>
+nnoremap tn gt
+nnoremap tp gT
+
+nnoremap <Leader>cv :action ChangeView<CR>
+nnoremap <Leader>ga :action GotoAction<CR>
+nnoremap <Leader>gc :action GotoClass<CR>
+nnoremap <Leader>gd :action GotoDeclaration<CR>
+nnoremap <Leader>ff :action GotoFile<CR>
+nnoremap <Leader>gi :action GotoImplementation<CR>
+nnoremap <Leader>gs :action GotoSymbol<CR>
+nnoremap <Leader>rf :action RecentFiles<CR>
+
+nnoremap <Leader>fu :action FindUsages<CR>
+nnoremap <Leader>ic :action InspectCode<CR>
+
